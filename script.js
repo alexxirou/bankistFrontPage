@@ -185,7 +185,7 @@ const imgObserver = new IntersectionObserver(imgLoad, {
 imgTargets.forEach(img => imgObserver.observe(img));
 
 //slider
-function init() {
+function sliderInit() {
   const slides = document.querySelectorAll('.slide');
   const dotContainer = document.querySelector('.dots');
   const btnRight = document.querySelector('.slider__btn--right');
@@ -231,4 +231,4 @@ function init() {
   btnLeft.addEventListener('click', prevSlide);
 }
 
-init();
+sliderInit();
